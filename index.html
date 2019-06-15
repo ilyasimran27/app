@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Fruit shop</title>
+</head>
+
+<body>
+    <header>
+        <h1>Fruit shop</h1>
+    </header>
+    <section class="main">
+        <div class="price">
+            <p>I have Rs.</p>
+            <input type="number" id="put-money">
+
+        </div>
+        <div class="total-price">
+            <p><strong>your total is rs</strong></p>
+            <input type="number" id="owner">
+        </div>
+        <div class="fruits">
+            <div class="items">
+                <p>RS:10</p>
+                <figure>
+                    <img src="images/apple.PNG" alt="" class="apple">
+                    <figcaption><strong>Apple</strong></figcaption>
+                </figure>
+                <div class="inc-dec" id="up">
+                    <button class="mi" onclick="apple_minus()">-</button>
+                    <input type="number" value="0" id="app-price" >
+                    <button  class="pl" onclick="apple_plus()">+</button>
+                </div>
+            </div>
+            <div class="items">
+                    <p>RS:15</p>
+                    <figure>
+                        <img src="images/orange.PNG" alt="" class="orange">
+                        <figcaption><strong>Orange</strong></figcaption>
+                    </figure>
+                    <div class="inc-dec">
+                        <button class="mi" onclick="orange_minus()">-</button>
+                        <input type="number" value="0" id="org-price">
+                        <button  class="pl" onclick="orange_plus()">+</button>
+                    </div>
+            </div>
+            <div class="items">
+                    <p>RS:07</p>
+                    <figure>
+                        <img src="images/banana.PNG" alt="" class="banana">
+                        <figcaption><strong>Banana</strong></figcaption>
+                    </figure>
+                    <div class="inc-dec">
+                        <button class="mi">-</button>
+                        <input type="number" id="ban-price">
+                        <button class="pl">+</button>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
