@@ -57,11 +57,11 @@ function price(a){
      price1=a*10;
     
    
-    sum=sum2+price1;
+    sum=price2+price1;
      
     
     
-   if(sum<putmoney)
+   if(sum<=putmoney)
    {
       
 
@@ -83,7 +83,7 @@ function price20(o){
      
     
     
-   if(sum2<putmoney)
+   if(sum2<=putmoney)
    {
       
 
