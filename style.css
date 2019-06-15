@@ -1,141 +1,139 @@
-header{
+header {
     text-align: center;
-    background-color:#383d3e;
-    color:white;
-    padding:10px;
+    background-color: #383d3e;
+    color: white;
+    padding: 10px;
     text-transform: capitalize;
-    background-image: linear-gradient(to top, #393e3e , #61697e ,#41464b );
+    background-image: linear-gradient(to top, #393e3e, #61697e, #41464b);
 }
-.main{
+
+.main {
     display: flex;
-    flex-direction:column;
-    
+    flex-direction: column;
 }
-.main .price,.total-price{
-    
-    display:flex;
 
-   justify-content: center;
-    align-items:center;
-    padding:20px;
-font-weight: bolder;
-font-size:20px;
-
-}
-.main .price input{
-    width:5%;
-    border:1px solid #d9d6d6;
-    border-radius: 25px;
-    padding:10px;
-    outline:none;
-    text-align: center;
-    font-size:20px;
-   
-}
-.main .total-price p{
-
-font-size:25px;
-font-weight: 500;
-text-transform: capitalize;
-}
-.main .total-price input{
-    background-color: #efe2cc;
-    width:5%;
-    border:none;
-    padding:10px;
-    outline:none;
-    text-align: center;
-    font-size:40px;
-    color:red;
-   
-}
-.main .total-price{
-    background-color: #efe2cc;
-   
-    padding:50px;
-}
-.main .fruits{
-    display:flex;
+.main .price,
+.total-price {
+    display: flex;
     justify-content: center;
-    background-image: linear-gradient(to top, #393e3e , #61697e ,#41464b );
-
+    align-items: center;
+    padding: 20px;
+    font-weight: bolder;
+    font-size: 20px;
 }
-.main .fruits .items{
-    width:15%;
-    margin:30px 40px ;
-    display:flex;
+
+.main .price input {
+    width: 5%;
+    border: 1px solid #d9d6d6;
+    border-radius: 25px;
+    padding: 10px;
+    outline: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+.main .total-price p {
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.main .total-price input {
+    background-color: #efe2cc;
+    width: 10%;
+    border: none;
+    padding: 10px;
+    outline: none;
+    text-align: center;
+    font-size: 40px;
+    color: red;
+}
+
+.main .total-price {
+    background-color: #efe2cc;
+    padding: 50px;
+}
+
+.main .fruits {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to top, #393e3e, #61697e, #41464b);
+}
+
+.main .fruits .items {
+    width: 15%;
+    margin: 30px 40px;
+    display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 5px;
-    background-color: #fff;
-    
-    
+    background-color: #f3f3f3;
 }
-.items p{
-    background-color:#346e34;
-    width:100%;
+
+.items p {
+    background-color: #346e34;
+    width: 100%;
     text-align: center;
-    margin-top:0;
-    padding:10px 0;
-    
+    margin-top: 0;
+    padding: 10px 0;
+    color: yellow;
 }
-.items figure{
-    width:100%;
+
+.items figure {
+    width: 100%;
     text-align: center;
 }
-.items figure .apple{
-width:30%;
+
+.items figure .apple {
+    width: 30%;
 }
-.items figure .orange{
-    width:41%;
+
+.items figure .orange {
+    width: 41%;
 }
-.items figure .banana{
-        width:33%;
+
+.items figure .banana {
+    width: 33%;
 }
+
 .items .inc-dec {
-    display:flex;
+    display: flex;
     justify-content: center;
-    margin:0 0 20px;
-    border:1px solid black;
-   border-radius:50px;
-    width:70%;
-    
-
-    
+    margin: 0 0 20px;
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 70%;
 }
-.items .inc-dec input{
-   width:100%; 
-    font-size:20px;
-    border-top:none;
-    border-bottom:none;
-    outline:none;
+
+.items .inc-dec input {
+    width: 100%;
+    font-size: 20px;
+    border-top: none;
+    border-bottom: none;
+    outline: none;
     text-align: center;
-    
-
 }
-.inc-dec button{
-    border:none;
-font-size:30px;
-background-color: #535958;
-color:white;
-outline:none;
-cursor: pointer;
 
+.inc-dec button {
+    border: none;
+    font-size: 30px;
+    background-color: #535958;
+    color: white;
+    outline: none;
+    cursor: pointer;
 }
-.mi{
+
+.mi {
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
 }
-.pl{
+
+.pl {
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
-
-}
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-
-  
 }
 
-
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
