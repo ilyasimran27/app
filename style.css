@@ -38,12 +38,12 @@
         text-transform: capitalize;
     }
     
-    .main .total-price input {
-        background-color: #efe2cc;
-        width: 10%;
-        border: none;
+    .main .total-price span {
+        
+       
+        
         padding: 10px;
-        outline: none;
+        
         text-align: center;
         font-size: 40px;
         color: red;
@@ -155,14 +155,12 @@
             text-align: center;
             font-size: 18px;
         }
-        .main .total-price input {
-            background-color: #efe2cc;
-            width: 10%;
-            border: none;
+        .main .total-price span {
+           
             padding: 10px;
-            outline: none;
+          
             text-align: center;
-            font-size: 22px;
+            font-size: 30px;
             color: red;
         }
     }
