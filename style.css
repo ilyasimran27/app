@@ -42,9 +42,9 @@
         
        
         
-        padding: 10px;
         
-        text-align: center;
+        
+       
         font-size: 40px;
         color: red;
     }
@@ -157,9 +157,9 @@
         }
         .main .total-price span {
            
-            padding: 10px;
+            
           
-            text-align: center;
+            
             font-size: 25px;
             color: red;
         }
