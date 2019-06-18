@@ -10,8 +10,9 @@ function total_amount(){
 function purchasing(){
     document.querySelector("span").innerHTML = total_purchase;
 }
-function apple_plus(){
-    if(total_price >= 10){
+function plus(button){
+    
+    if(total_price >= 10 && button.id==1){
         count_apple++;
        
         purchase+=10;
@@ -20,32 +21,13 @@ function apple_plus(){
         purchase=0;
         document.querySelector("#app-price").value=count_apple;
         purchasing();
+        
 
     }
-    else{
+    else if(button.id==1){
         alert("sorry you do not have maoney to buy apple");
     }
-
-}
-function apple_minus(){
-    if(total_purchase > 0 && count_apple > 0){
-        count_apple--;
-       
-        purchase+=10;
-        total_price=total_price+purchase;
-        total_purchase=total_purchase-purchase;
-        purchase=0;
-        document.querySelector("#app-price").value=count_apple;
-        purchasing();
-
-    }
-    else{
-        alert("sorry you do not have maoney to buy apple");
-    }
-
-}
-function orange_plus(){
-    if(total_price >= 15){
+    if(total_price >= 15 && button.id==2){
         count_orange++;
        
         purchase+=15;
@@ -56,30 +38,10 @@ function orange_plus(){
         purchasing();
 
     }
-    else{
+    else if(button.id==2){
         alert("sorry you do not have maoney to buy orange");
     }
-
-}
-function orange_minus(){
-    if(total_purchase > 0 && count_apple > 0){
-        count_orange--;
-       
-        purchase+=15;
-        total_price=total_price+purchase;
-        total_purchase=total_purchase-purchase;
-        purchase=0;
-        document.querySelector("#org-price").value=count_orange;
-        purchasing();
-
-    }
-    else{
-        alert("sorry you do not have maoney to buy orange");
-    }
-
-}
-function ban_plus(){
-    if(total_price >= 7){
+    if(total_price >= 7 && button.id==3){
         count_ban++;
        
         purchase+=7;
@@ -90,13 +52,41 @@ function ban_plus(){
         purchasing();
 
     }
-    else{
+    else if(button.id==3){
         alert("sorry you do not have maoney to buy banana");
     }
 
 }
-function ban_minus(){
-    if(total_purchase > 0 && count_apple > 0){
+function minus(button){
+    if(total_purchase > 0 && count_apple > 0 && button.id==-1){
+        count_apple--;
+       
+        purchase+=10;
+        total_price=total_price+purchase;
+        total_purchase=total_purchase-purchase;
+        purchase=0;
+        document.querySelector("#app-price").value=count_apple;
+        purchasing();
+
+    }
+    else if(button.id==-1){
+        alert("sorry you do not have maoney to buy apple");
+    }
+    if(total_purchase > 0 && count_orange > 0 && button.id==-2){
+        count_orange--;
+       
+        purchase+=15;
+        total_price=total_price+purchase;
+        total_purchase=total_purchase-purchase;
+        purchase=0;
+        document.querySelector("#org-price").value=count_orange;
+        purchasing();
+
+    }
+    else if(button.id==-2){
+        alert("sorry you do not have maoney to buy orange");
+    }
+    if(total_purchase > 0 && count_ban > 0 && button.id==-3){
         count_ban--;
        
         purchase+=7;
@@ -107,8 +97,12 @@ function ban_minus(){
         purchasing();
 
     }
-    else{
+    else if(button.id==-3){
         alert("sorry you do not have maoney to buy banana");
     }
+    
 
 }
+
+
+
